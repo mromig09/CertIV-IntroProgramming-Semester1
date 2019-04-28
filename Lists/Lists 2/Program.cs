@@ -34,7 +34,6 @@ namespace Lists_2
 
             {
                 Console.WriteLine("The number " + input + " already exists");
-                int index = iList.IndexOf(item: 9, index: 1);
             }
             else
             {
