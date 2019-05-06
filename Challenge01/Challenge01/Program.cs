@@ -12,7 +12,7 @@ namespace Challenge01
         {
             //array "Currently "wrong" must fix
             int[] values = new int[6];
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < 7; i++) 
 
             /*
             values[0] = 1;
@@ -25,10 +25,11 @@ namespace Challenge01
             //statement loop
             for ( ; ; )
             {
-                //Welcoming line >>need to input "roll" command<<
+                    //Welcoming line >>need to input "roll" command<<
+                    int userInput;
                 Console.WriteLine("Let's Play a Game of Dice!");
                 Console.WriteLine("Roll the dice");
-                Console.ReadLine();
+                userInput = Console.Read();
 
                 //create a new dice object and roll
                 Dice newRun = new Dice();
@@ -52,10 +53,9 @@ namespace Challenge01
                     }
                     else if (yes.Equals("no"))
                     {
-                        Console.WriteLine("Cya, Bye. . .");
+                        Console.WriteLine("Cya, Bye. . .");                        
                     }
-                }
-
+                }                 
                 Console.ReadKey();
             }
         }
