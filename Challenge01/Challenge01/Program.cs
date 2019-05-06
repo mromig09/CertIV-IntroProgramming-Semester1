@@ -13,6 +13,9 @@ namespace Challenge01
             //array "Currently "wrong" must fix
             int[] values = new int[6];
             for (int i = 0; i < 7; i++)
+            {
+
+            }
 
                 /*
                 values[0] = 1;
@@ -56,6 +59,8 @@ namespace Challenge01
                         {
                             Console.WriteLine("Cya, Bye. . .");
                         }
+                        else
+                        Console.WriteLine("That input is invalid, Please try again. .");
                         Console.ReadKey();
                     }
                 }
