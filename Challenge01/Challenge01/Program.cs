@@ -46,7 +46,7 @@ namespace Challenge01
                     Console.WriteLine("Would you like to roll again?");
                     Console.ReadLine();
 
-                    //if yes we continue, if no cya, bye.
+                    //if yes we continue, if no terminate.
                     string yes = Console.ReadLine();
                     {
                         if (yes.Equals("yes"))
@@ -57,7 +57,7 @@ namespace Challenge01
                         }
                         else if (yes.Equals("no"))
                         {
-                            Console.WriteLine("Cya, Bye. . .");
+                            break;
                         }
                         else
                         Console.WriteLine("That input is invalid, Please try again. .");
