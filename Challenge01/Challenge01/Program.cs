@@ -8,30 +8,20 @@ namespace Challenge01
 {
     class Program
     {
+        List<int> items = new List<int>(6);
         static void Main(string[] args)
         {
-            //array "Currently "wrong" must fix
-            int[] values = new int[6];
-            for (int i = 0; i < 7; i++)
-            {
+            Program p = new Program();
+            int loopCounter = 0;
 
-            }
-
-                /*
-                values[0] = 1;
-                values[1] = 2;
-                values[2] = 3;
-                values[3] = 4;
-                values[4] = 5;
-                values[5] = 6; */
-
-                //statement loop
-                for (; ; )
+            // loop
+            while (loopCounter < 1)
                 {
                     //Welcoming line >>need to input "roll" command<<
+                    bool fail = true;
                     int userInput;
                     Console.WriteLine("Let's Play a Game of Dice!");
-                    Console.WriteLine("Roll the dice");
+                    Console.WriteLine("Push enter to Roll the dice");
                     userInput = Console.Read();
 
                     //create a new dice object and roll
@@ -43,31 +33,44 @@ namespace Challenge01
                     Console.WriteLine();
 
                     //play again
-                    Console.WriteLine("Would you like to roll again?");
-                    Console.ReadLine();
-
-                    //if yes we continue, if no terminate.
-                    string yes = Console.ReadLine();
+                    while (fail == true)
                     {
-                        if (yes.Equals("yes"))
+                        Console.WriteLine("Would you like to roll again?");
+                        Console.ReadLine();
+
+                        //if yes we continue, if no terminate.
+                        string yes = Console.ReadLine();
                         {
-                            Console.WriteLine("Lets Play Again. . . ");
-                            Console.WriteLine("Push Enter to Start. . .");
-                            Console.WriteLine();
+                            if (yes == "yes")
+                            {
+                                Console.WriteLine();
+                                Console.WriteLine("Lets Play Again. . . ");
+                                Console.WriteLine("Push Enter to Start. . .");
+                                fail = false;
+                                Console.WriteLine();
+                                
+                            }
+                            else if (yes == "no")
+                            {
+                                p.items.ForEach(Console.WriteLine);
+                                fail = false;
+                                loopCounter = 1;
+                            }
+                            else
+                            {
+                                Console.WriteLine("That input is invalid, Please try again. .");
+                                fail = true;
+                                Console.ReadKey();
+                            }
                         }
-                        else if (yes.Equals("no"))
-                        {
-                            break;
-                        }
-                        else
-                        Console.WriteLine("That input is invalid, Please try again. .");
-                        Console.ReadKey();
                     }
                 }
         }
 
         class Dice
         {
+            Program p = new Program();
+            
             private int die1;
 
             public int Die1
@@ -80,7 +83,9 @@ namespace Challenge01
             {
                 //generate a number for the die face
                 Random rand1 = new Random();
-                Die1 = rand1.Next(1, 6);
+                die1 = rand1.Next(1, 6);
+                
+                
             }
         }
     }
