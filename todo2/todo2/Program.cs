@@ -36,9 +36,9 @@ namespace todo2
             Person person5 = new Person(20, "Lucy");
             Person person6 = new Person(15, "Betty");
             Person person7 = new Person(18, "Rachel");
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("-----------------------------------------");
             Console.WriteLine(" First Name  |   Age   |   Date Of Birth");
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("-----------------------------------------");
             Console.WriteLine("".PadLeft(04) + person1.Name + "".PadLeft(10) + person1.Age + "".PadLeft(11) + person1.DateOfBirth());
             Console.WriteLine("".PadLeft(04) + person2.Name + "".PadLeft(09) + person2.Age + "".PadLeft(11) + person2.DateOfBirth());
             Console.WriteLine("".PadLeft(04) + person3.Name + "".PadLeft(09) + person3.Age + "".PadLeft(11) + person3.DateOfBirth());
@@ -46,7 +46,7 @@ namespace todo2
             Console.WriteLine("".PadLeft(04) + person5.Name + "".PadLeft(10) + person5.Age + "".PadLeft(11) + person5.DateOfBirth());
             Console.WriteLine("".PadLeft(04) + person6.Name + "".PadLeft(09) + person6.Age + "".PadLeft(11) + person6.DateOfBirth());
             Console.WriteLine("".PadLeft(04) + person7.Name + "".PadLeft(08) + person7.Age + "".PadLeft(11) + person7.DateOfBirth());
-            Console.WriteLine("----------------------------------------");
+            Console.WriteLine("-----------------------------------------");
 
 
             //old code line
