@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BeeKeeping", "BeeKeeping\BeeKeeping.csproj", "{2C532307-30B3-4E2C-BB3F-9AD16E9CC12A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C532307-30B3-4E2C-BB3F-9AD16E9CC12A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C532307-30B3-4E2C-BB3F-9AD16E9CC12A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C532307-30B3-4E2C-BB3F-9AD16E9CC12A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C532307-30B3-4E2C-BB3F-9AD16E9CC12A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {11BBF2D4-4E91-4FDB-93E4-9CA59AE7CF89}
+	EndGlobalSection
+EndGlobal
